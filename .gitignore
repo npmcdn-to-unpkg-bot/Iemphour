@@ -1,6 +1,6 @@
 # Node build artifacts
+public/bower_components
 node_modules
-public/bower_compenents
 npm-debug.log
 
 # Local development
