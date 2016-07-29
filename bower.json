@@ -1,0 +1,30 @@
+{
+  "name": "Iemphour",
+  "description": "P2P Service",
+  "main": "index.js",
+  "authors": [
+    "Rawle Juglal <rawledjuglal@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "homepage": "\"\"",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AngularJS": "angular-latest#^1.5.3",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "ng-lodash": "^0.4.0"
+  }
+}
