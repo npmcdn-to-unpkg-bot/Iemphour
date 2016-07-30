@@ -9,7 +9,7 @@ var path = require('path');
 //website icon, tab icon, URL icon or bookmark icon, is a file named favicon.ico and 
 //containing one or more small icons,[1] most commonly 16×16 pixels, associated with a 
 //particular website or web page.
-var favicon = require('serve-favicon');
+//var favicon = require('serve-favicon');
 //This middleware contains utilities for logging information to the console
 var logger = require('morgan');
 //This middleware is used for cookie
