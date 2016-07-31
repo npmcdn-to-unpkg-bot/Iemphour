@@ -9,13 +9,32 @@ var path = require('path');
 //website icon, tab icon, URL icon or bookmark icon, is a file named favicon.ico and 
 //containing one or more small icons,[1] most commonly 16×16 pixels, associated with a 
 //particular website or web page.
-//var favicon = require('serve-favicon');
+var favicon = require('serve-favicon');
 //This middleware contains utilities for logging information to the console
 var logger = require('morgan');
 //This middleware is used for cookie
 var cookieParser = require('cookie-parser');
 //This middleware is used for parsing body content into more usable data
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+if (!process.env.MONGODB_URI) {
+  var mongoUri = 'mongodb://heroku_rfcxc5mm:tla5gdjq9jn2tib6mom717mrjt@ds031925.mlab.com:31925/heroku_rfcxc5mm'
+} else {
+  var mongoUri = process.env.MONGODB_URI
+}
+
+mongoose.connect(mongoUri);
+
+var db = mongoose.connection
+
+db.on('error', console.error.bind(console, 'connection error:'))
+
+db.once('open', dbCallback)
+
+function dbCallback() {
+  console.log('db callback called')
+}
 
 //This middleware is used to respond to request made by client
 var routes = require('./routes/index');
