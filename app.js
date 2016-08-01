@@ -24,21 +24,21 @@ if (!process.env.MONGODB_URI) {
   var mongoUri = process.env.MONGODB_URI
 }
 
-mongoose.connect(mongoUri);
+mongoose.connect(mongoUri+'/logins');
 
-var db = mongoose.connection
+var db = mongoose.connection;
 
-db.on('error', console.error.bind(console, 'connection error:'))
+db.on('error', console.error.bind(console, 'connection error:'));
 
-db.once('open', dbCallback)
+db.once('open', dbCallback);
 
 function dbCallback() {
-  console.log('db callback called')
+  console.log('connection success');
 }
 
 //This middleware is used to respond to request made by client
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var logins = require('./routes/logins');
 
 //-----------------------------------------------------------------------
 //instanciating app as an express object
@@ -62,7 +62,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //when client submits base url respond with routes which requires ./routes/index seen above or go to file for more details
 app.use('/', routes);
 //when client submits base url/users respond with users which requires ./routes/users seen above or go to file for more details
-app.use('/users', users);
+app.use('/logins', logins);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
