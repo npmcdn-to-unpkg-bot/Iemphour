@@ -25,6 +25,7 @@
     "bootstrap": "^3.3.6",
     "angular-route": "^1.5.3",
     "angular-resource": "^1.5.3",
-    "ng-lodash": "^0.4.0"
+    "ng-lodash": "^0.4.0",
+    "font-awesome": "fontawesome#^4.6.3"
   }
 }

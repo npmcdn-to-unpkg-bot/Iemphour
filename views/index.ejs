@@ -18,8 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--Custom CSS-->
-    <link href='https://fonts.googleapis.com/css?family=Peralta' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href='/stylesheets/style.css'>
+    <link rel="stylesheet" href='/stylesheets/index.css'>
     <!-- Latest compiled and minified JavaScript -->
     <!--JQuery-->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -28,6 +27,46 @@
     <script src='/bower_components/angular/angular.min.js'></script>
   </head>
   <body>
-      <h1>Iemphour</h1>
+      <div id='fullBody'>
+        <div class='main'>
+          <div class='container-fluid'>
+            <div class='row'>
+              <div class='col-xs-12 col-md-6 col-md-offset-3 text-center'>
+                <div id='imageDiv'>
+                    <img src='/images/The Iemphour I.png'></img>
+                    <!--<img src='/images/Iemphourfinal.png'></img>-->
+                    <!--HOW DO I MAKE NGSHOW IMAGE BASED ON SIZE OF SCREEN-->
+                </div><!--End of imageDiv-->
+              </div><!--End of col-xs-12-->
+            </div><!--End of row-->
+            <div class='row'>
+              <div class='col-xs-12 col-md-6 col-md-offset-3'>
+                <div id='loginDiv'>
+                  <form novalidate class='simple-form'>
+                    <div class="form-group col-sm-6">
+                      <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" ng-model="user.email" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" ng-model='user.password' placeholder="Password">
+                    </div>
+                    <div class='form-group form-group-login col-xs-12'>
+                      <a type="submit" class="btn btn-login raised" ng-click='locate(user)'>Login</a>
+                      <a href='#' class='btn btn-login raised' role='button' ng-click='directToRegister()'>Register</a>
+                      <span class="label label-default">Not a member, click register</span>
+                    </div>
+                  </form>
+                  <!--HOW DO I SUBMIT INFO FOR VALIDATING AND THEN REDIRECT TO PAGE-->
+                  <!--<a href='portfolio' class='btn btn-login raised' role='button'>Login</a>-->
+                  
+                </div><!--End of loginDiv-->
+              </div><!--End of col-xs-12-->
+            </div><!--End of row-->
+          </div><!--End of container-fluid-->
+        </div><!--End of main-->
+      </div><!--End of fullBody-->
+    <!--Module-->
+    <script src="/ang.js"></script>
   </body>
 </html>

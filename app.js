@@ -38,7 +38,7 @@ function dbCallback() {
 
 //This middleware is used to respond to request made by client
 var routes = require('./routes/index');
-var logins = require('./routes/logins');
+//var logins = require('./routes/logins');
 
 //-----------------------------------------------------------------------
 //instanciating app as an express object
@@ -62,7 +62,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //when client submits base url respond with routes which requires ./routes/index seen above or go to file for more details
 app.use('/', routes);
 //when client submits base url/users respond with users which requires ./routes/users seen above or go to file for more details
-app.use('/logins', logins);
+//app.use('/logins', logins);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
