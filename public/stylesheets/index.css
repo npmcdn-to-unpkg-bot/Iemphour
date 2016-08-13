@@ -2,6 +2,10 @@ body{
     color:white;    
 }
 
+nav{
+    display:none;
+}
+
 #fullBody{
     top:0;
     left:0;
@@ -25,7 +29,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
     width:100%;
 }
 
-#imageL{
+#mainText{
     display:none;    
 }
 
@@ -64,6 +68,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', end
 }
 
 @media (min-width: 768px) {
+    nav{
+        display:block;
+        font-size: 1.25em;
+    }
+    
+    .navbar{
+        min-height:100px;
+        background-color:white;
+        border-radius:0px;
+        margin:0px;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a{
+        line-height: 80px;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a:hover{
+        color:black;
+        text-shadow: 2px 2px 8px #059BD1;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a:focus{
+        color:black;
+        text-shadow: 2px 2px 8px #059BD1;
+    }
+    
     #imageDiv{
         margin-top: 4%;
     }
@@ -72,11 +102,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', end
         margin-top:1%;
     }
     
+    #imageI{
+        display:none;
+    }
+    
     #imageL{
+        width:300px;
+        height:100px;
+    }
+    
+    #mainText{
         display:block;
     }
     
-    #imageI{
-        display:none;
+    .mainTextDiv h1{
+        font-family: 'Passion One', cursive;
+        font-size: 3.25em;
+    }
+    
+    .text1{
+        font-size:1.75em;
+    }
+    
+    .text1 span{
+        color:#4CAAC9;
+    }
+    
+    .text2{
+        color:#4CAAC9;
+        font-size: 1.05em;
+    }
+    
+    .text2 span{
+        color:white;
     }
 }
