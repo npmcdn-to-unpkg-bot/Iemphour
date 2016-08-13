@@ -10,7 +10,7 @@ body {
     padding-top: 50px;
 }
 
-.navbar, .footer{
+.navbar{
      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b1b1b+0,383838+13,4e4e4e+24,0a0a0a+47,010101+50,0d0d0d+54,959595+100 */
 background: #1b1b1b; /* Old browsers */
 background: -moz-linear-gradient(-45deg,  #1b1b1b 0%, #383838 13%, #4e4e4e 24%, #0a0a0a 47%, #010101 50%, #0d0d0d 54%, #959595 100%); /* FF3.6-15 */
@@ -39,6 +39,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b1b', end
 .panel-iemphour{
     margin-top:4%;
     border:1px solid #23538a;
+    box-shadow: 10px 5px 5px black;
 }
 
 .panel-iemphour>.panel-heading{
@@ -115,8 +116,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', end
 	margin-top: 3px;
 }
 
+#footer{
+    margin:0;
+    border-radius:0px;
+}
+
 @media (min-width: 768px) {
     .form-group{
         margin-top:24px;
+    }
+    
+    .main{
+        height:calc(100vh - 100px);
     }
 }

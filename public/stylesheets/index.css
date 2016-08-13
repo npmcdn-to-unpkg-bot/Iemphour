@@ -6,7 +6,7 @@ body{
     top:0;
     left:0;
     width:100%;
-    min-height:480px;
+    height:100vh;
     background-attachment: local;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#959595+0,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100;Black+Gloss+Pipe */
 background: #959595; /* Old browsers */
@@ -23,6 +23,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
 
 #imageDiv img{
     width:100%;
+}
+
+#imageL{
+    display:none;    
 }
 
 #loginDiv{
@@ -66,5 +70,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23538a', end
     
     .form-group-login{
         margin-top:1%;
+    }
+    
+    #imageL{
+        display:block;
+    }
+    
+    #imageI{
+        display:none;
     }
 }
