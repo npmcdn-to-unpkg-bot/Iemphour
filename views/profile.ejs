@@ -18,6 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--Custom CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
     <link rel="stylesheet" href='/stylesheets/profile.css'>
     <!-- Latest compiled and minified JavaScript -->
     <!--JQuery-->
@@ -43,8 +44,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Log Out</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Profile</a></li>
@@ -54,7 +54,60 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class='main'>
-        <div></div>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-12'>
+            <div class='BiographyDiv'>
+              <div class="media">
+                <div class="media-left">
+                    <img class="media-object" src="../images/userIDPhoto.jpg" alt="{{user.photoID}}"/>
+                </div><!--End of media-left-->
+                <div class="media-body">
+                  <div class='row'>
+                    <div class='col-xs-5'>
+                      <h3 class='no-pad'>Profile</h3>
+                      <span class='iemphour-block'>#5551333</span>
+                      <span class='iemphour-block'><span>First:</span><span>John</span></span>
+                      <span class='iemphour-block'><span>Last:</span><span>Doe</span></span>
+                    </div><!--End of col-xs-6-->
+                    <div class='col-xs-7'>
+                      <img id='imageL' src='../images/Iemphourfinal.png'/>
+                    </div><!--End of col-xs-6-->
+                  </div><!--End of row-->
+                </div><!--End of media-body-->
+              </div><!--End of media-->
+            </div><!--End of BiographyDiv-->
+          </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+        <div class='row'>
+            <div class='col-xs-12'>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default panel-primary">
+                  <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4 class="panel-title text-center">
+                      <span  class='text-info lead'>
+                        <strong>Bio</strong>
+                      </span>
+                    </h4>
+                  </div><!--End of panel-heading-->
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <span><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, voluptatum, sint. Recusandae, aut, natus fugiat explicabo ipsa nesciunt consequatur suscipit iste dolorem aperiam. Laudantium, nihil iure ab voluptate quod modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, autem, reiciendis, culpa aliquam ducimus numquam possimus voluptatum maxime iste fuga libero sequi dolore ratione voluptas facere similique consequuntur. Autem, alias?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nam nobis numquam quae molestias deserunt atque voluptatibus porro eligendi quas? Ratione, voluptatum earum non deleniti pariatur ad quia ipsa quibusdam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, inventore, corporis sequi accusamus ad facere maiores perferendis officiis consequuntur vero suscipit necessitatibus alias eaque aliquid dolor quo ipsum accusantium doloremque.</strong></span>
+                    </div><!--End of panel-body-->
+                  </div><!--End of collapseOne-->
+                </div><!--End of panel-primary-->
+              </div><!--End of panel-group-->
+            </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+        <div class='row'>
+          <div class='col-xs-12 text-center'>
+            <div id='buttonDiv'>
+              <a type="submit" class="btn btn-iemphour raised" role='button'>Ready to Work</a>
+              <a href='#' class='btn btn-iemphour raised' role='button'>Post a Job</a>
+            </div><!--End of buttonDiv-->
+          </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+      </div><!--End of container-fluid-->
     </div><!--End of main-->
     <nav id='footer' class="navbar navbar-default navbar-inverse">
       <div class="container-fluid">
