@@ -10,4 +10,8 @@ router.get('/register', function(req, res, next){
    res.render('register', {title:'Create New Account'}); 
 });
 
+router.get('/users/:id', function(req, res, next){
+    res.render('profile', {title:'Iemphour Profile'}); 
+});
+
 module.exports = router;
