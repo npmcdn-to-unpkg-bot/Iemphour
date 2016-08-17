@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='iemphourHome'>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +26,11 @@
     <!--Bootstrap-->
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='/bower_components/angular/angular.min.js'></script>
+    <script src='/bower_components/angular-route/angular-route.min.js'></script>
   </head>
-  <body ng-app='iemphourHome'>
+  <body>
+    <ng-view></ng-view>
+    
       <nav class="navbar navbar-default navbar-inverse">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
